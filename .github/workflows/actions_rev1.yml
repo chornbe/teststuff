@@ -11,6 +11,9 @@ jobs:
     if: ${{ github.event.pull_request.merged }}
     steps:
       - run: echo "merging ${{ github.ref }} in ${{ github.repository }}"
+      - name: Show directory before pull
+        run: |
+          ls -la ${{ github.workspace }}
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Show directory
