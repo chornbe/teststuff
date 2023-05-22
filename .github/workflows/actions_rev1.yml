@@ -16,4 +16,4 @@ jobs:
       - name: Show directory
         run: |
           ls ${{ github.workspace }}
-      - run: echo "status: ${{ job.status }}"
+      - run: echo "status is ${{ job.status }}"
