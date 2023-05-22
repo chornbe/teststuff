@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} -> merging ${{ github.ref }}
 on: [merge]
 jobs:
-  OnMerge:
+ Explore-GitHub-Actions: 
     runs-on: ubuntu-latest
     steps:
         uses: actions/checkout@v3
